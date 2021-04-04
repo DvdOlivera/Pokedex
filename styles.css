@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.botonesheader{
+    
+    width: 30%;
+    height: 50px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    
+}
+
+
+#contenedorpokedex{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#volverarriba{
+    align-self: center;
+    margin-top: 20px;
+    width: 20%;
+}
