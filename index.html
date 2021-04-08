@@ -92,14 +92,14 @@
                                     :class="activeTab===1 ? 'font-semibold' : ''"
                                     @click="activeTab=1"
                                   >
-                                    Description
+                                  Abilities
                                   </button>
                                   <button
                                     class="border border-b-0 px-3 py-1 focus:outline-none"
                                     :class="activeTab===2 ? 'font-semibold' : ''"
                                     @click="activeTab=2"
                                   >
-                                    Abilities
+                                   Description
                                   </button>
                                   <button
                                     class="border border-b-0 px-3 py-1 focus:outline-none rounded-tr-md"
@@ -113,12 +113,12 @@
                                   class="border p-2 h-48 overflow-y-auto rounded-b-xl rounded-tr-xl"
                                   id="tabs-contents"
                                 >
-                                  <div x-show="activeTab===1">
+                                  <div id="habilidades" x-show="activeTab===1">
                                     
                                   </div>
-                                  <div id="habilidades" x-show="activeTab===2">
+                                  <div  x-show="activeTab===2">
                                     
-                                  </div id="habilidades">
+                                  </div>
                                   <div id="stats" x-show="activeTab===3">
                                     
                                   </div>

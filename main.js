@@ -10,14 +10,13 @@ function tomarinputpokemon(){
 function buscarPokemon(nombre){
     
 
-    console.log(nombre)
+    
     fetch(` https://pokeapi.co/api/v2/pokemon/${nombre}`)
     
 .then(respuesta => respuesta.json())
 
 .then( respuestaJSON => {
 
-    console.log(respuestaJSON)
     const img = respuestaJSON.sprites.other["official-artwork"].front_default;
 
     const habilidades = respuestaJSON.abilities
@@ -32,7 +31,7 @@ function buscarPokemon(nombre){
 
 
 
-    document.querySelector("#foto").src = img;
+    agregarfoto(img);    
 
     habilidadesdelpokemon(habilidades);
 
@@ -50,6 +49,10 @@ function buscarPokemon(nombre){
 
 })}
 
+function agregarfoto(img){
+    document.querySelector("#foto").src = img;
+}
+
 function aparecerfilmina(){
     
     document.querySelector("#filmina").classList.remove("invisible");
@@ -59,7 +62,6 @@ function aparecerfilmina(){
 function statsdelpokemon(stats){
     document.querySelector("#stats").innerHTML=""
 
-    console.log(stats)
     stats.forEach( function (parametro){
 
     const valor = parametro.base_stat
@@ -99,7 +101,7 @@ function habilidadesdelpokemon(habilidades){
     habilidades.forEach( function (parametro){
 
 
-    console.log(parametro.ability.name)
+    
 
     let p= document.createElement("p")
 
