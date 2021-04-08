@@ -1,3 +1,4 @@
+
 document.querySelector("#search").addEventListener("click",tomarinputpokemon);
 document.querySelector("#botoncerrar").addEventListener("click",cerrarfilminaPokemon);
 
@@ -8,12 +9,14 @@ function tomarinputpokemon(){
 }
 function buscarPokemon(nombre){
     
+
     console.log(nombre)
     fetch(` https://pokeapi.co/api/v2/pokemon/${nombre}`)
     
 .then(respuesta => respuesta.json())
 
 .then( respuestaJSON => {
+
     console.log(respuestaJSON)
     const img = respuestaJSON.sprites.other["official-artwork"].front_default;
 
@@ -109,6 +112,7 @@ function habilidadesdelpokemon(habilidades){
 }
     )}
 
+
 /*
 - modulo de inicializacion: un modulo que unicamente ejecuta la primera funcion del sitio,
 esta primera funcion no esta en ESTE modulo, sino que esta en el modulo de enlace.Este modulo seria
@@ -125,6 +129,8 @@ en la pagina al entrar
             d) modulo de visualizacion de datos: toma los datos del json y los muestra en el sitio
 
 */
+
+
 
 
 
