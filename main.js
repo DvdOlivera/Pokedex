@@ -125,3 +125,10 @@ en la pagina al entrar
             d) modulo de visualizacion de datos: toma los datos del json y los muestra en el sitio
 
 */
+
+
+
+
+
+
+
