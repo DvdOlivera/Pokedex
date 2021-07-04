@@ -13,4 +13,4 @@ Con la intención de practicar la vinculación con RESTful APIs, creé esta SPA 
 + Javascript
 + GoogleFonts
 + [Tailwind](https://tailwindcomponents.com/)
-+ [PokeApi (RESTful API)](https://pokeapi.co/)
++ RESTful API ([PokeApi](https://pokeapi.co/))
